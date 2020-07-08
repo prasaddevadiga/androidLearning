@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        >
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:layout_width="match_parent"
+            android:id="@+id/tourImage"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/transView"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/tourTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:fontFamily="@font/baliday"
+            android:layout_marginTop="10dp"
+            android:layout_above="@id/tourRating"
+            android:layout_marginStart="1dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_margin="10dp"
+            android:progressTint="@color/rating"
+            android:padding="10dp"
+            android:rating="4"
+            android:layout_marginStart="5dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:id="@+id/tourRating"
+            android:layout_above="@id/tourDescription"/>
+
+        <TextView
+            android:id="@+id/tourDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Tour description"
+            android:fontFamily="@font/baliday"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
