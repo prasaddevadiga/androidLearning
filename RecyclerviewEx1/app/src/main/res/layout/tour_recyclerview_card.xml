@@ -38,6 +38,7 @@
             android:layout_marginTop="10dp"
             android:layout_above="@id/tourRating"
             android:textStyle="bold"
+            android:layout_marginStart="8dp"
             android:textSize="28sp"
             android:textColor="@android:color/white"/>
 
@@ -46,6 +47,7 @@
             android:layout_height="wrap_content"
             android:progressTint="@color/rating"
             android:rating="4"
+            android:layout_marginStart="8dp"
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:id="@+id/tourRating"
             android:layout_above="@id/tourDescription"/>
@@ -58,6 +60,7 @@
             android:text="Tour description"
             android:fontFamily="@font/baliday"
             android:textStyle="normal"
+            android:layout_marginStart="8dp"
             android:textSize="18sp"
             android:layout_alignParentBottom="true"
             android:textColor="@android:color/white"/>
