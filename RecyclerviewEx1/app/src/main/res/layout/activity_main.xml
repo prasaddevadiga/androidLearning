@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,15 +14,24 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:text="Recycler 1"
-       tools:layout_editor_absoluteX="9dp"
-       tools:layout_editor_absoluteY="25dp" />
+        />
 
    <Button
        android:id="@+id/btnTourism"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+       android:layout_below="@id/btnRecycler1"
        android:layout_marginTop="16dp"
        android:text="Tourism"
-       app:layout_constraintTop_toBottomOf="@+id/btnRecycler1"
-       tools:layout_editor_absoluteX="159dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+
+   <Button
+       android:id="@+id/btnrestAPI"
+       android:layout_below="@id/btnTourism"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       android:text="Rest API"
+
+        />
+</RelativeLayout>

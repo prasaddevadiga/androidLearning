@@ -17,7 +17,7 @@ class BlogPostList: AppCompatActivity() {
     }
 
     private fun addDataSet() {
-        var data = Datasource.createDataSet()
+        var data = BlogDatasource.createDataSet()
         blogAdapter.submitList(data)
     }
 
@@ -25,8 +25,7 @@ class BlogPostList: AppCompatActivity() {
     private fun initRecyclerView() {
         recycler_view.apply {
             layoutManager = LinearLayoutManager(this@BlogPostList)
-            val decoration =
-                TopSpacingItemDecoration(30)
+            val decoration = TopSpacingItemDecoration(30)
             addItemDecoration(decoration)
             blogAdapter = BlogRecyclerAdapter()
             adapter = blogAdapter

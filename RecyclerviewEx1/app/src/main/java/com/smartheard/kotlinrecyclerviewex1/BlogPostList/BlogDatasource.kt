@@ -2,7 +2,7 @@ package com.smartheard.kotlinrecyclerviewex1.BlogPostList
 
 import com.smartheard.kotlinrecyclerviewex1.Models.BlogPost
 
-class Datasource {
+class BlogDatasource {
 
     companion object{
         fun createDataSet() : List<BlogPost> {
