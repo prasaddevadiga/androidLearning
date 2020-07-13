@@ -12,9 +12,6 @@ import com.google.gson.Gson
 import com.smartheard.kotlinrecyclerviewex1.R
 import kotlinx.android.synthetic.main.rest_api_view.*
 import org.json.JSONException
-import org.json.JSONArray
-import org.json.JSONObject
-import com.google.gson.annotations.SerializedName
 import com.smartheard.kotlinrecyclerviewex1.RestAPI.Model.EyeHunt
 
 
@@ -47,7 +44,6 @@ class RestAPIView : AppCompatActivity() {
                     var strResp = response.toString()
 
                     val eyeHunt = Gson().fromJson(strResp, EyeHunt::class.java)
-
                     var str_user: String = ""
                     for (i in 0 until eyeHunt.items.count()) {
 
