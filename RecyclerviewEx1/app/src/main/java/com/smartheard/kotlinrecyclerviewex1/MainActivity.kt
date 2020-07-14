@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.smartheard.kotlinrecyclerviewex1.BlogPostList.BlogPostList
+import com.smartheard.kotlinrecyclerviewex1.BooksAPI.BookListView
 import com.smartheard.kotlinrecyclerviewex1.RestAPI.RestAPIView
 import com.smartheard.kotlinrecyclerviewex1.Tourism.PlaceListView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -26,6 +27,11 @@ class MainActivity : AppCompatActivity() {
 
         btnrestAPI.setOnClickListener {
             val intent = Intent(this, RestAPIView::class.java)
+            startActivity(intent)
+        }
+
+        btnBooksAPI.setOnClickListener {
+            val intent = Intent(this, BookListView::class.java)
             startActivity(intent)
         }
     }

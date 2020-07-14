@@ -23,6 +23,7 @@
         <activity android:name=".BlogPostList.BlogPostList" android:label="My blogpost"/>
         <activity android:name=".Tourism.PlaceListView" />
         <activity android:name=".RestAPI.RestAPIView"/>
+        <activity android:name=".BooksAPI.BookListView"/>
     </application>
 
 </manifest>
